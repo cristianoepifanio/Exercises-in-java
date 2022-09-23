@@ -16,6 +16,11 @@ public class arithmetic {
         System.out.println("A soma entre os números "+x+" e "+y+" é "+(x+y));
         System.out.println("A soubtração entre os números "+x+" e "+y+" é "+(x-y));
         System.out.println("A multiplicação entre os números "+x+" e "+y+" é "+(x*y));
+        if (y == 0) {
+            System.out.println("Não é possível divisão por 0.");
+        } else {
+            System.out.println("A divisão entre os números "+x+" e "+y+" é "+(x/y));   
+        }
 
         num1.close();
         num2.close();
