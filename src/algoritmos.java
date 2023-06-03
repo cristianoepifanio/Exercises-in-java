@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class algoritmos {
 
     public void calculadora() {
-        try (Scanner sc = new Scanner(System.in)) {
+        Scanner sc = new Scanner(System.in);
             System.out.println("Digite num1: ");
             float x = sc.nextFloat();
             System.out.println("Digite num2: ");
@@ -15,7 +15,7 @@ public class algoritmos {
             System.out.println("A soma de "+x+" + "+y+" = "+soma);
             System.out.println("A subtração de "+x+" + "+y+" = "+sub);
             System.out.println("A multiplicação de "+x+" + "+y+" = "+mult);
-        }
+        
 
         
     }
@@ -26,10 +26,13 @@ public class algoritmos {
             System.out.println("Digite sua altura: ");
             float altura = sc2.nextFloat();
             float icm = peso/(altura*altura);
-            if(icm<=18.5){
+            if(icm<18.5){
                 System.out.println("ABAIXO DO PESO.");
+            }else if (icm<25){
+                System.out.println("PESO NORMAL.");
+            }else if(icm<30){
+                System.out.println("sOBRE PESO.");
             }
-        
 
     }
 
