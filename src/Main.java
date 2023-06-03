@@ -1,14 +1,19 @@
 import java.util.Scanner;
 
-public class Main {
+public class Main{
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        System.out.println("Digite x: ");
-        float x = scanner.nextFloat();
-        System.out.println("Digite y: ");
-        float y = scanner.nextFloat();
-        System.out.println("A soma entre "+x+" e "+y+" é de: "+(x+y));
-        System.out.println("A subtração entre "+x+" e "+y+" é de: "+(x-y));
-        System.out.println("A multiplicação entre "+x+" e "+y+" é de: "+(x*y));
+        
+        // Resuloção da 1ª questão da 1ª lista do 1º módulo de lógica de programação
+                
+        algoritmos Mod1List1quest1 = new algoritmos();
+        Mod1List1quest1.calculadora();
+        
+        // Resuloção da 2ª questão da 1ª lista do 1º módulo de lógica de programação
+        
+        algoritmos Mod1List1quest2 = new algoritmos();
+        Mod1List1quest2.ICM();
+
+        try (Scanner sc = new Scanner(System.in)) {}
     }
+   
 }
