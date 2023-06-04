@@ -82,6 +82,7 @@ public class algoritmos {
             switch(votacao){
                 case 0:
                     finalizar = 0;
+                    break;
                 case 1:
                     docinho += 1;
                     break;
