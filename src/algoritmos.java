@@ -68,6 +68,38 @@ public class algoritmos {
 
     }
 
+    public void votacaoPOWERGIRLS(){
+        int docinho = 0;
+        int lindinha = 0;
+        int florzinha = 0;
+        int finalizar = 1;
+        int votacao = 1;
+
+
+        System.out.println("Qual a sua menina super poderosa preferida?");
+        while(finalizar!=0){
+            votacao = sc.nextInt();
+            switch(votacao){
+                case 0:
+                    finalizar = 0;
+                case 1:
+                    docinho += 1;
+                    break;
+                case 2:
+                    lindinha += 1;
+                    break;
+                case 3:
+                    florzinha += 1;
+                    break;
+                default:
+                    System.out.println("Os números possiveis são apenas 1,2 e 3.");
+            }
+        }
+        System.out.println("Docinho: "+docinho);
+        System.out.println("Lindinha: "+lindinha);
+        System.out.println("Florzinha: "+florzinha);
+    }
+
 }
     
 
