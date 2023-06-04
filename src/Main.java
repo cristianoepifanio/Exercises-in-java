@@ -30,14 +30,30 @@ public class Main{
 
             while(QuetionAgain==true){ 
             if (modulo==1 && lista==1 && questao==1){
-                // Resuloção da 1ª questão da 1ª lista do 1º módulo de lógica de programação
+
+                // Resolução da 1ª questão da 1ª lista do 1º módulo de lógica de programação
                     answer.calculadora();
+
             }else if (modulo==1 && lista==1 && questao==2){
-                // Resuloção da 2ª questão da 1ª lista do 1º módulo de lógica de programação
+                
+                // Resolução da 2ª questão da 1ª lista do 1º módulo de lógica de programação
                     answer.ICM();
+                    
             }else if (modulo==1 && lista==1 && questao==3){
-                // Resuloção da 2ª questão da 1ª lista do 1º módulo de lógica de programação
+                
+                // Resolução da 3ª questão da 1ª lista do 1º módulo de lógica de programação
                     answer.votacaoPOWERGIRLS();
+                    
+            }else if (modulo==1 && lista==2 && questao==1){
+                
+                // Resolução da 1ª questão da 2ª lista do 1º módulo de lógica de programação
+                    answer.alunoAvaliacao();
+                    
+            }else if (modulo==1 && lista==2 && questao==2){
+                
+                // Resolução da 1ª questão da 2ª lista do 1º módulo de lógica de programação
+                    answer.mesDoAno();
+                    
             }else{
                 System.out.println("Desculpe, não temos essa questão.");
             }   
