@@ -21,6 +21,7 @@ public class Main{
         while (QuetionsAgain == true){
             QuetionAgain = true;
             QuetionsAgain = true;
+            System.out.println("");
             System.out.print("Digite o módulo: ");
             int modulo = scanner.nextInt();
             System.out.print("Qual Lista? ");
@@ -30,7 +31,7 @@ public class Main{
 
             while(QuetionAgain==true){ 
             if (modulo==1 && lista==1 && questao==1){
-
+                
                 // Resolução da 1ª questão da 1ª lista do 1º módulo de lógica de programação
                     answer.calculadora();
 
@@ -51,14 +52,30 @@ public class Main{
                     
             }else if (modulo==1 && lista==2 && questao==2){
                 
-                // Resolução da 1ª questão da 2ª lista do 1º módulo de lógica de programação
+                // Resolução da 2ª questão da 2ª lista do 1º módulo de lógica de programação
                     answer.mesDoAno();
+                    
+            }else if (modulo==1 && lista==2 && questao==3){
+                
+                // Resolução da 3ª questão da 2ª lista do 1º módulo de lógica de programação
+                    answer.parcelas5xSemJuros();
+                    
+            }else if (modulo==1 && lista==2 && questao==4){
+                
+                // Resolução da 4ª questão da 2ª lista do 1º módulo de lógica de programação
+                    answer.precificacao();
+                    
+            }else if (modulo==1 && lista==2 && questao==5){
+                
+                // Resolução da 5ª questão da 2ª lista do 1º módulo de lógica de programação
+                    answer.consumoMedioDeUmAutomovel();
                     
             }else{
                 System.out.println("Desculpe, não temos essa questão.");
             }   
                 
                 // To repeat the running quetion
+            System.out.println("");
             System.out.print("Deseja repetir a questão? ");
                     repetirQuestao = scanner.next();
 

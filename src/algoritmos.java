@@ -6,9 +6,13 @@ public class algoritmos {
     
     // Resolução da 1ª questão da 1ª lista do 1º módulo de lógica de programação
     public void calculadora() {
-            System.out.println("Digite num1: ");
+        System.out.println("");
+        System.out.println("QUESTÃO:");
+        System.out.println("Digite dois números e este algoritmo te retornará a Soma, subtração, multiplicação e divisão dos mesmos:");
+        System.out.println("");
+            System.out.print("Digite num1: ");
             float x = sc.nextFloat();
-            System.out.println("Digite num2: ");
+            System.out.print("Digite num2: ");
             float y = sc.nextFloat();
             float soma = x+y;
             float sub = x-y;
@@ -28,7 +32,10 @@ public class algoritmos {
 
     // Resolução da 2ª questão da 1ª lista do 1º módulo de lógica de programação
     public void ICM(){
-        
+            System.out.println("");
+            System.out.println("QUESTÃO:");
+            System.out.println("Informe seu peso e sua altura e este algoritmo te retornará o status do seu ICM (índice de massa corporea.)");
+            System.out.println("");
             System.out.println("Digite seu peso: ");
             float peso = sc.nextFloat();
             System.out.println("Digite sua altura: ");
@@ -52,12 +59,15 @@ public class algoritmos {
 
     // Resolução da 3ª questão da 1ª lista do 1º módulo de lógica de programação
     public void votacaoPOWERGIRLS(){
+        System.out.println("");
+        System.out.println("QUESTÃO:");
+        System.out.println("Vote em [1] para Docinho, [2] para Lindinha e [3] para Florzinha. Pressione [0] quando quiser finalizar a votação.");
+        System.out.println("");
         int docinho = 0;
         int lindinha = 0;
         int florzinha = 0;
         int finalizar = 1;
         int votacao = 1;
-
 
         System.out.println("Qual a sua menina super poderosa preferida?");
         while(finalizar!=0){
@@ -82,10 +92,27 @@ public class algoritmos {
         System.out.println("Docinho: "+docinho);
         System.out.println("Lindinha: "+lindinha);
         System.out.println("Florzinha: "+florzinha);
+        if(docinho>lindinha && docinho>florzinha){
+            System.out.println("Docinho ganhou.");
+        }else if(lindinha>docinho && lindinha>florzinha){
+            System.out.println("Lindinha ganhou.");
+        }else if(florzinha>docinho && lindinha<florzinha){
+            System.out.println("Florzinha ganhou.");
+        }else if(docinho==lindinha){
+            System.out.println("EMPATE entre Docinho e Lindinha.");
+        }else if(docinho==florzinha){
+            System.out.println("EMPATE entre Docinho e Florzinha.");
+        }else if(florzinha == lindinha){
+            System.out.println("EMPATE entre Florzinha e Lindinha.");
+        }
     }
 
     // Resolução da 1ª questão da 2ª lista do 1º módulo de lógica de programação
     public void alunoAvaliacao(){
+        System.out.println("");
+        System.out.println("QUESTÃO:");
+        System.out.println("Digite o nome do aluno e as 3 notas tiradas por ele e este programa te retorna a média e a situação do mesmo, aprovado ou reprovado apenas.");
+        System.out.println("");
         String nomeALuno = "";
         float nota1 = -1;
         float nota2 = -1;
@@ -105,7 +132,7 @@ public class algoritmos {
         do {            
             System.out.println("Digite a terceira nota: ");
             nota3 = sc.nextFloat();
-        } while (nota3<0 || nota2>10);
+        } while (nota3<0 || nota3>10);
         
         
         float media = ((nota1+nota2+nota3)/3);
@@ -120,9 +147,13 @@ public class algoritmos {
 
     // Resolução da 2ª questão da 2ª lista do 1º módulo de lógica de programação
     public void mesDoAno(){
+        System.out.println("");
+        System.out.println("QUESTÃO:");
+        System.out.println("Digite un número entre 1 e 12 e estre programa te retorna o mês do ano equivalente.");
+        System.out.println("");
         int mes = 0;
         do {
-            System.out.println("Digite un número entre 1 e 12");
+            System.out.println("Digite un número entre 1 e 12.");
             mes = sc.nextInt();
         } while (mes<1 || mes>12);
         switch(mes){
@@ -167,7 +198,48 @@ public class algoritmos {
     }
      // Resolução da 3ª questão da 2ª lista do 1º módulo de lógica de programação
      public void parcelas5xSemJuros(){
-        
+        System.out.println("");
+        System.out.println("QUESTÃO:");
+        System.out.println("Digite um valor de um produto e este programa te retornará o valor das parcelas dividas em 5x sem juros.");
+        System.out.println("");
+        float valor = 0;
+        float parcela = 0;
+        System.out.print("O valor do produto: ");
+        valor = sc.nextFloat();
+        parcela = valor/5;
+        System.out.println("O valor da parcela é de: R$ "+parcela);
+     }
+     // Resolução da 4ª questão da 2ª lista do 1º módulo de lógica de programação
+     public void precificacao(){
+            System.out.println("");
+            System.out.println("QUESTÃO:");
+            System.out.println("Digite um valor e uma margem(%) e este programa lhe mostrará o valor final do produto.");
+            System.out.println("");
+            float valor = 0;
+            int margem = 0;
+            System.out.print("Digite o valor de compra: ");
+            valor = sc.nextFloat();
+            System.out.print("Digite a margem em %: ");
+            margem = sc.nextInt();
+            float precoFinal = valor+((valor*margem)/100);
+            System.out.println("Preço final de R$ "+precoFinal+".");
+
+            
+     }
+     // Resolução da 5ª questão da 2ª lista do 1º módulo de lógica de programação
+     public void consumoMedioDeUmAutomovel(){
+        System.out.println("");
+        System.out.println("QUESTÃO:");
+        System.out.println("Digite a kilometragem rodada e o volume em L de combustível consumida e estre programa te retornará o consumo médio do mesmo.");
+        System.out.println("");
+        float kilometragem = 0;
+        float combustivel = 0;
+        System.out.print("Qual a kilometragem rodada? ");
+        kilometragem = sc.nextFloat();
+        System.out.print("Quantos litros foram consumidos? ");
+        combustivel = sc.nextFloat();
+        float consumoMedio = kilometragem/combustivel;
+        System.out.println("Assim, o consumo médio é de "+consumoMedio+" Km/L.");
      }
 }
     
